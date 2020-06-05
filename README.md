@@ -1,7 +1,7 @@
 # Selenium
 This repository contains code examples for Selenium WebDriver in Java
 
-Important Points:-
+**Important Points:-**
 
 1. The first step is to create a Driver object for Chrome Driver. If you create an object for a class, driver is created 
 automatically.
@@ -10,7 +10,7 @@ automatically.
 methods for automation. Driver is an interface.
 
 3. We have to do one more thing to invoke the browser. The .exe file is the browser driver file. You have to mention the file 
-path in System.setProperty() method.
+   path in System.setProperty() method.
 
 4. Every object may not have an ID, className or name. So, CSS and XPath are preferred. 
 
@@ -34,20 +34,19 @@ path in System.setProperty() method.
 
 14. Whenever you have to verify in the console, use $x(" ") for XPath and $(" ") for CSS. 
 
-15. The CSS Syntax is:-
+15. **The CSS Syntax is:-**
 
     tagName[attribute = 'value'], tagName#id, tagName.className 
     
-    XPath Syntax:-
+    **XPath Syntax:-**
     
     tagName[@attribute = 'value']
     
-16. XPath Regular Expression syntax: 
+16. **XPath Regular Expression syntax:**
     tagName[contains(@attribute, 'value')]. 
    'contains' here should contain the actual value. If you're passing the actual teext then give only attribute = 'value' but     if you're giving the subtext to match then write 'contains'.
    
-17. CSS Regular Expression syntax: tagName[attribute* = 'value'].If you think that attributes are changing i.e. it's dynamic 
-    then use this regular expression.
+17. **CSS Regular Expression syntax:** tagName[attribute* = 'value'].If you think that attributes are changing i.e. it's            dynamic then use this regular expression.
     
 18. **Locators**: A locator is a query that results in 1-N eleements being returned to you, the majority of the time, it will 
       a single element.

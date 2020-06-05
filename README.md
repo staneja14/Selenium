@@ -49,7 +49,35 @@ path in System.setProperty() method.
 17. CSS Regular Expression syntax: tagName[attribute* = 'value'].If you think that attributes are changing i.e. it's dynamic 
     then use this regular expression.
     
-18. 
+18. **Locators**: A locator is a query that results in 1-N eleements being returned to you, the majority of the time, it will 
+      a single element.
+      
+      Selenium provides many methods to find elements:
+      
+      1. **ID**: This is thee preferred approach as ID tends to be unique, meaning that your locator will be reliable, even if            the site was re-designed or additional content was added. Easiest waay to find whether an element has ID or not is
+           to use developer tools.
+           
+      2. **Name**: It's same as ID. Name isn't much used by developers. 
+      
+      3. **CSS Selector**: It allows us to send a query to Web Driver. So, instead oof saying find an element by ID, we can be 
+         very specific, or instruct WeebDriver to follow a pattern. If I can't find an element directly with something unique,
+         I'll always turn to a CSS selector. 
+         
+      4. **ClassName**: Classes are commonly not unique on a page. By.class will search all the eleements on a page aand                return you the first one that has the value provided in the class attribute. 
+      
+      5. **TagName**: It's rarely used. It will return the first element on the page. Eg.: div, p, form etc.
+      
+      6. **LinkText**: 
+      
+          Eg. <a href = "#"> here </a>
+          driver.findElement(By.linkText("here"))
+          
+          It will return the first one that maatches the text, used mostly on navigation menus.
+          
+      7. **PartialLinkText**: It will check all your anchor tags on page and see if the teext of them partially mathces your 
+           query.
+      
+      
     
     
 

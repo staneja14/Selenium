@@ -9,7 +9,7 @@ automatically.
 2. Once the driver is created, we will implement its methods. Web Driver is nothing but an interface which provides all the
    methods for automation. Driver is an interface.
 
-3. We have to do one more thing to invoke the browser. The .exe file is the browser driver file. You have to mention the file 
+3. We have to do one more thing to invoke browser. The .exe file is the browser driver file. You have to mention the file 
    path in System.setProperty() method.
 
 4. Every object may not have an ID, className or name. So, CSS and XPath are preferred. 
@@ -71,7 +71,7 @@ automatically.
           Eg. <a href = "#"> here </a>
           driver.findElement(By.linkText("here"))
           
-          It will return the first one that maatches the text, used mostly on navigation menus.
+          It will return the first one that matches the text, used mostly on navigation menus.
           
       7. **PartialLinkText**: It will check all your anchor tags on page and see if the text of them partially matches your 
            query.
